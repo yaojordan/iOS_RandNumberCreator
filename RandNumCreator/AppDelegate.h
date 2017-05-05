@@ -15,6 +15,7 @@
 
 //@property (readonly, strong) NSPersistentContainer *persistentContainer;//iOS 10
 
+//before iOS 10
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;

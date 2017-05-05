@@ -146,8 +146,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wv-si-Wfk">
                                             <rect key="frame" x="105" y="0.0" width="128" height="43"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -171,6 +170,9 @@
                     <navigationItem key="navigationItem" id="BPh-b9-Xjs">
                         <barButtonItem key="rightBarButtonItem" title="清空" id="H1Y-Ao-iwQ">
                             <color key="tintColor" red="0.99238989639999997" green="0.31568403140000001" blue="0.3458492869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="Delete:" destination="aDQ-g3-9MH" id="VNQ-KN-7lV"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>

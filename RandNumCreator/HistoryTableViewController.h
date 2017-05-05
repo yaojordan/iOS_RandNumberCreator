@@ -10,4 +10,6 @@
 
 @interface HistoryTableViewController : UITableViewController
 
+- (IBAction)Delete:(UIBarButtonItem *)sender;
+
 @end
