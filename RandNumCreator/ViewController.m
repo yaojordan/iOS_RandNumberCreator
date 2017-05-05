@@ -87,8 +87,8 @@
 
 -(void)JumpAlert{
     
-    UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"" message:@"尚未輸入數字" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK"style:UIAlertActionStyleDefault handler:^(UIAlertAction *alertAction){
+    UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"Oops!" message:@"尚未輸入數字" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"確定"style:UIAlertActionStyleDefault handler:^(UIAlertAction *alertAction){
         //按鈕按下去之後執行的動作
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
@@ -100,7 +100,7 @@
 }
 -(void)JumpAlert_TooBig{
     UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"Oops!" message:@"僅限0~9999的數字" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"OK"style:UIAlertActionStyleDefault handler:^(UIAlertAction *alertAction){
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"確定"style:UIAlertActionStyleDefault handler:^(UIAlertAction *alertAction){
         //按鈕按下去之後執行的動作
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
