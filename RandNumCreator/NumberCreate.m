@@ -7,14 +7,19 @@
 //
 
 #import "NumberCreate.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
 
 @implementation NumberCreate
 @synthesize numA, numB, result;
 
 -(int)Create{
+    
 
     result = arc4random() %  (numB-numA+1) + numA;
-  
+
+    
+    
     return result;
 }
 

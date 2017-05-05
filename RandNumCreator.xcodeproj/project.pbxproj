@@ -16,6 +16,9 @@
 		8EAA28361D7D9DC000CB7967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAA28341D7D9DC000CB7967 /* LaunchScreen.storyboard */; };
 		8EAA28411D7D9DC000CB7967 /* RandNumCreatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA28401D7D9DC000CB7967 /* RandNumCreatorTests.m */; };
 		8EAA284C1D7D9DC000CB7967 /* RandNumCreatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA284B1D7D9DC000CB7967 /* RandNumCreatorUITests.m */; };
+		8EB7BA1A1EAF767000E34627 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7BA191EAF767000E34627 /* HistoryTableViewController.m */; };
+		8EB7BA431EAF9DD100E34627 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7BA411EAF9DD100E34627 /* Model.xcdatamodeld */; };
+		8EBC69B81EB078F600FAFF11 /* HistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBC69B71EB078F600FAFF11 /* HistoryTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,11 @@
 		8EAA28471D7D9DC000CB7967 /* RandNumCreatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandNumCreatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAA284B1D7D9DC000CB7967 /* RandNumCreatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandNumCreatorUITests.m; sourceTree = "<group>"; };
 		8EAA284D1D7D9DC000CB7967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB7BA181EAF767000E34627 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		8EB7BA191EAF767000E34627 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		8EB7BA421EAF9DD100E34627 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8EBC69B61EB078F600FAFF11 /* HistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewCell.h; sourceTree = "<group>"; };
+		8EBC69B71EB078F600FAFF11 /* HistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +116,18 @@
 				8EAA282A1D7D9DC000CB7967 /* AppDelegate.m */,
 				8EAA282C1D7D9DC000CB7967 /* ViewController.h */,
 				8EAA282D1D7D9DC000CB7967 /* ViewController.m */,
+				8E8493F81E0D54B6005FA7F5 /* NumberCreate.h */,
+				8E8493FC1E0D5510005FA7F5 /* NumberCreate.m */,
+				8EB7BA181EAF767000E34627 /* HistoryTableViewController.h */,
+				8EB7BA191EAF767000E34627 /* HistoryTableViewController.m */,
+				8EBC69B61EB078F600FAFF11 /* HistoryTableViewCell.h */,
+				8EBC69B71EB078F600FAFF11 /* HistoryTableViewCell.m */,
 				8EAA282F1D7D9DC000CB7967 /* Main.storyboard */,
 				8EAA28321D7D9DC000CB7967 /* Assets.xcassets */,
 				8EAA28341D7D9DC000CB7967 /* LaunchScreen.storyboard */,
 				8EAA28371D7D9DC000CB7967 /* Info.plist */,
 				8EAA28261D7D9DC000CB7967 /* Supporting Files */,
-				8E8493F81E0D54B6005FA7F5 /* NumberCreate.h */,
-				8E8493FC1E0D5510005FA7F5 /* NumberCreate.m */,
+				8EB7BA411EAF9DD100E34627 /* Model.xcdatamodeld */,
 			);
 			path = RandNumCreator;
 			sourceTree = "<group>";
@@ -281,6 +294,9 @@
 				8EAA282B1D7D9DC000CB7967 /* AppDelegate.m in Sources */,
 				8E8493FD1E0D5510005FA7F5 /* NumberCreate.m in Sources */,
 				8EAA28281D7D9DC000CB7967 /* main.m in Sources */,
+				8EBC69B81EB078F600FAFF11 /* HistoryTableViewCell.m in Sources */,
+				8EB7BA1A1EAF767000E34627 /* HistoryTableViewController.m in Sources */,
+				8EB7BA431EAF9DD100E34627 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +559,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8EB7BA411EAF9DD100E34627 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EB7BA421EAF9DD100E34627 /* Model.xcdatamodel */,
+			);
+			currentVersion = 8EB7BA421EAF9DD100E34627 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8EAA281B1D7D9DC000CB7967 /* Project object */;
 }
