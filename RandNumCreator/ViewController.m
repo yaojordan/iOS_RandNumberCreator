@@ -79,8 +79,8 @@
 }
 
 - (IBAction)ResetNum:(UIButton *)sender {
-    NumA.text = NULL;
-    NumB.text = NULL;
+    NumA.text = nil;
+    NumB.text = nil;
     NumDisplay.text=@"0";
 }
 

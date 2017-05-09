@@ -57,7 +57,6 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="CreateNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfr-U7-Gt3"/>
                                     <action selector="ResetNum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="REY-Pc-nC4"/>
                                 </connections>
                             </button>
