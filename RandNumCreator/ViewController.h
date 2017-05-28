@@ -12,9 +12,10 @@
 @interface ViewController : UIViewController
 {
     NumberCreate *cr;
-    __weak IBOutlet UILabel *NumDisplay;
-    __weak IBOutlet UITextField *NumA;
-    __weak IBOutlet UITextField *NumB;
+    
+    //__weak IBOutlet UILabel *NumDisplay;
+    //__weak IBOutlet UITextField *NumA;
+    //__weak IBOutlet UITextField *NumB;
 }
 
 

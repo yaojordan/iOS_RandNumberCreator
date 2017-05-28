@@ -19,9 +19,10 @@
 @synthesize NumDisplay, NumA, NumB;
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
     cr = [NumberCreate new];
     
     //load時就讓他讀數字鍵盤
@@ -31,9 +32,10 @@
     
 }
 
+//點擊空白處關閉鍵盤
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
-} //點擊空白處關閉鍵盤
+} 
 
 
 

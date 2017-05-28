@@ -66,6 +66,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *cellIdentifier = @"Cell";
+    
     HistoryTableViewCell *cell = (HistoryTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if(cell == nil){
@@ -73,7 +74,7 @@
     }
     
     //設定Cell
-    NSManagedObject *numArr = [numMutArray objectAtIndex:indexPath.row];
+    NSManagedObject *numArr = [numMutArray objectAtIndex:indexPath.row];//indexPath.row：目前正在顯示的列
     cell.numLabel.text = [numArr valueForKey:@"number"];
     
     
@@ -88,6 +89,7 @@
 -(void)JumpAlert_BeforeDelete{
     
     UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"" message:@"資料將清空，是否繼續？" preferredStyle:UIAlertControllerStyleAlert];
+    
     UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"繼續" style:UIAlertActionStyleDefault handler:^(UIAlertAction *alertAction){
         //按鈕按下去之後執行的動作
         [self dismissViewControllerAnimated:YES completion:nil];
@@ -111,19 +113,26 @@
         for(NSManagedObject *num in fetchedObjects){
             [managedObjectContext deleteObject:num];
         }
-        
+        //刪除view中的資料
         [numMutArray removeAllObjects];
+        
+        
         [self.tableView reloadData];
 
 
     }];
+    
+    
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *alertAction){
         //按鈕按下去之後執行的動作
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
+    
+    
     //把兩個按鈕加到controller
     [alert addAction:alertAction];
     [alert addAction:cancelAction];
+    
     //顯示controller
     [self presentViewController:alert animated:YES completion:nil];
     
